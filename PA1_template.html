@@ -194,7 +194,7 @@ act2$steps[is.na(act2$steps)] &lt;- act2$steps.mean[is.na(act2$steps)] # replace
 </div>
 <div id="create-a-new-dataset-that-is-equal-to-the-original-dataset-but-with-the-missing-data-filled-in." class="section level4">
 <h4>3. Create a new dataset that is equal to the original dataset but with the missing data filled in.</h4>
-<p>The following dataset matches the original data with the exception that missing data (where steps = NA) was replaced with imputed values.</p>
+<p>The following data set matches the original data with the exception that missing data (where steps = NA) was replaced with imputed values.</p>
 <pre class="r"><code>act2 &lt;- act2[, c(&quot;steps&quot;, &quot;date&quot;, &quot;interval&quot;), with=FALSE][order(date, interval)]</code></pre>
 </div>
 <div id="a.-make-a-histogram-of-the-total-number-of-steps-taken-each-day" class="section level4">
@@ -224,7 +224,7 @@ suppressMessages(print(plot3))</code></pre>
 </div>
 <div id="d.-what-is-the-impact-of-imputing-missing-data-on-the-estimates-of-the-total-daily-number-of-steps" class="section level4">
 <h4>4d. What is the impact of imputing missing data on the estimates of the total daily number of steps?</h4>
-<p>Missing values for steps were imuted using the mean steps for the same time period and same type of day (weekday or weekend). This resulted in adding more data toward the center of the histogram. Average daily steps with imputed data was similar to average daily steps for the original data that ignored NA values. The median decreased slightly because more imputed days were weekdays, with lower average steps. While these balanced out with a few imputed weekend days, it had the effect of moving the mid-point of the data down a few notches from the original median, resulting in a slightly lower median.</p>
+<p>Missing values for steps were imputed using the mean steps for the same time period and same type of day (weekday or weekend). This resulted in adding more data toward the center of the histogram. Average daily steps with imputed data was similar to average daily steps for the original data that ignored NA values. The median decreased slightly because more imputed days were weekdays, with lower average steps. While these balanced out with a few imputed weekend days, it had the effect of moving the mid-point of the data down a few notches from the original median, resulting in a slightly lower median.</p>
 </div>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
