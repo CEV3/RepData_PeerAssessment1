@@ -1,6 +1,6 @@
 # Reproducible Research: Peer Assessment 1
 By CEV  
-`r format(Sys.time(), '%e %B, %Y')`  
+6 October 2015  
 ## Introduction
 This project answered a series of questions regarding personal fitness data comprising the number of steps taken during 5-minute intervals over a 61-day period. The number of steps included NA values that were imputed for some of the analysis. The headings and numbered questions and instructions listed in this report were from the assignment.
 
